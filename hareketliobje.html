@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=640">
+        <title>GaziArOrnek</title>
+		<style>
+			#logo {
+				position:fixed;
+				bottom:10px;
+				right:10px;
+				z-index: 9;
+			}
+			#gg {
+				position:fixed;
+				top:50px;
+				left:75px;
+				z-index: 9;
+				width: 100px; height:200px;
+			  background-image: url(img/gangam.png);
+			  animation: gangham 4s steps(23,start) infinite,
+				movearound 12s steps(69,end) infinite alternate 44ms;
+			  animation-direction: normal, alternate;
+			}
+			@keyframes gangham {
+			  0% {background-position: 0 0}
+			  100% {background-position: -5175px 0}
+			}
+			@keyframes movearound {
+			  0% {transform: translatex(0)}
+			  100% {transform: translatex(400px);}
+			}
+			
+			body {
+				background : rgba(255, 255, 255, 0.1);
+			}
+		</style>
+    </head>
+    <body>
+		<div id="gg"></div>
+		<img id="logo" src="img/logokirmizi200.png" />
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/hareketliobje.js"></script>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <title>GaziArOrnek</title>
+		<style>
+			#logo {
+				position:fixed;
+				bottom:10px;
+				right:10px;
+				z-index: 9;
+			}
+			#intro {
+				margin: 10px;
+				font-family: Verdana;
+				font-size: 16px;
+				font-weight: bold;
+				color: #000000;
+				z-index: 10;
+				width:95%;
+			}
+			.menuinfo {
+				margin: 10px;
+				font-family: Verdana;
+				font-size: 12px;
+				color: #000000;
+				z-index: 10;
+				width:95%;			
+			} 
+			.menubtn {
+				  background: #3498db;
+				  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+				  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+				  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+				  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+				  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+				  -webkit-border-radius: 28;
+				  -moz-border-radius: 28;
+				  border-radius: 28px;
+				  font-family: Arial;
+				  color: #ffffff;
+				  font-size: 20px;
+				  padding: 10px 40px 10px 40px;
+				  text-decoration: none;				  
+			}
+			body {
+				background : rgba(255, 255, 255, 0.4);
+			}
+		</style>
+    </head>
+    <body>
+			<div id="intro">Arttırılmış Gerçeklik Ortamları Analiz ve Tasarımı Dersi Örnek Projesi</div>
+			<br />
+			<br />
+			<a class="menubtn" href="hareketliobje.html">AR - Hareketli Nesne Örneği</a>
+			<div class="menuinfo">Kamera görüntüsünü ekranda gösterirken ekranda dans enden bir gangham style figürü görünür.</div>
+			<br />
+			<a class="menubtn" href="isaretci.html">AR - İşaretçi Örneği</a>
+			<div class="menuinfo">Kamera görüntüsünü ekranda gösterirken işaretçi olarak kullanılan herhangi bir QR kodu gördüğünde, yine kamera görüntüsü üzerinde bir resim gösterir ve QR kod içeriğindeki text'i yazar.</div>
+			<br />
+			<a class="menubtn" href="navigasyon.html">AR - Navigasyon Örneği</a>
+			<div class="menuinfo">Kamera görüntüsünü ekranda gösterirken, konum servisi ve pusulayı kullanarak, Beşiktaş Vodafone Arena 'nın hangi yönde olduğunu, kamera görüntüsü üzerinde beliren hareketli bir ok işareti ile gösterir. </div>
+			<img id="logo" src="img/logokirmizi200.png" />
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
